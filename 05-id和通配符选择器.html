@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>id和通配符选择器</title>
+  <style>
+    #pink {
+      color: pink;
+    }
+
+    /* 特殊情况下通过通配符清除所有元素的默认边距和填充，统一不同浏览器的默认样式。 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="pink">大春</div>
+  <div>夏洛</div>
+  <div>秋雅</div>
+  <div>冬梅</div>
+</body>
+
+</html>

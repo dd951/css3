@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元素的隐藏与显示</title>
+
+  <style>
+    .box {
+      width: 150px;
+      height: 100px;
+      background: lightblue;
+      margin: 10px;
+      border: 2px solid red;
+    }
+
+    .hidden-visibility {
+      visibility: hidden;
+    }
+
+    .hidden-display {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+  在CSS中，visibility和display样式都可以设置元素的隐藏和显示.
+  它俩的区别是：visibility隐藏时，物理空间不会消失。
+              display隐藏时，物理空间会消失。
+  -->
+  <div class="box">正常盒子1</div>
+  <div class="box hidden-visibility">visibility: hidden (隐藏但占位)</div>
+  <div class="box">正常盒子2 - 上面有隐藏元素但位置保留</div>
+  <div class="box hidden-display">display: none (完全隐藏)</div>
+  <div class="box">正常盒子3 - 上面隐藏元素不占位</div>
+</body>
+
+</html>

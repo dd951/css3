@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ball</title>
+    <style>
+        .container {
+            /* 子元素会采用flex布局 */
+            display: flex;
+            /* 三个球水平居中 */
+            justify-content: center;
+        }
+        .ball {
+            /* 子元素会采用flex布局 */
+            display: flex;
+            /* 圆角程度 */
+            border-radius: 50%;
+            /* 边框样式 */
+            border: 2px solid #000;
+            /* 字体大小 */
+            font-size: 50px;
+            /* 字体加粗 */
+            font-weight: bold;
+            /* 使用flex布局时，上下居中 */
+            align-items: center;
+            /* 使用flex布局时，左右居中 */
+            justify-content: center;
+            /* 字体颜色 */
+            color: #fff;
+            /* 宽度和高度 */
+            width: 100px;
+            height: 100px;
+            /* 让球和球之间有点间距 */
+            margin-right: 30px;
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .purple {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball red">1</div>
+        <div class="ball blue">2</div>
+        <div class="ball purple">3</div>
+    </div>
+</body>
+</html>

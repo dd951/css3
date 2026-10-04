@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float 布局的高度塌陷问题</title>
+
+  <style>
+  .parent {
+    border: 3px solid red;
+    margin: 20px;
+    overflow: hidden; /* 解决高度塌陷问题 */
+  }
+  .child {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 10px;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- 
+  高度塌陷是指：当父元素包含浮动子元素时，父元素的高度会变成0，就像"塌陷"了一样。
+  如何解决：
+    父元素上添加 overflow:hidden样式来解决高度塌陷的问题。
+  -->
+  <div class="parent">
+    <div class="child">浮动元素1</div>
+    <div class="child">浮动元素2</div>
+  </div>
+  <!-- <div>下面的内容会上移</div> -->
+   <div>下面的内容正常显示</div>
+</body>
+
+</html>

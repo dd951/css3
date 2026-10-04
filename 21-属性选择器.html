@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>属性选择器</title>
+  <style>
+    /* a[class] {
+      color: red;
+    } */
+
+    /* a[class="font"] {
+      color: red;
+    } */
+
+    /* a[class^="font"] {
+      color: red;
+    } */
+
+    /* a[class$="t14"] {
+      color: red;
+    } */
+
+    a[class*="f"] {
+      color: red;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">修改文字颜色</a> <br>
+  <a href="#" class="font">修改文字颜色</a> <br>
+  <a href="#" class="font14">修改文字颜色</a> <br>
+  <a href="#" class="font16">修改文字颜色</a> <br>
+  <a href="#" class="fred">修改文字颜色</a> <br>
+
+  <input type="text">
+  <input type="password">
+  <input type="checkbox">
+  <input type="radio">
+</body>
+
+</html>

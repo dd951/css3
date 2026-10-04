@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>脱离文档流-float布局</title>
+
+  <style>
+    .layout {
+      width: 500px;
+      border: 1px solid #ddd;
+    }
+
+    .sidebar {
+      width: 120px;
+      float: left;
+      background: #f5f5f5;
+      padding: 15px;
+      height: 200px;
+    }
+
+    .main-content {
+      margin-left: 150px;
+      /* 120px + 30px间距 */
+      padding: 15px;
+      background: white;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+  float（浮动）
+  元素脱离文档流，向左或向右浮动（相对于最近的块级父容器来说的，浮动到左侧或右侧。）
+  其他块级元素会忽略它的存在，但文本不会（文本内容会环绕在浮动元素周围）
+  -->
+  <div class="layout">
+    <div class="sidebar">
+      <h3>侧边栏</h3>
+      <p>导航菜单</p>
+      <p>分类列表</p>
+    </div>
+    <div class="main-content">
+      <h2>主要内容区域</h2>
+      <p>这是页面的主要内容，侧边栏通过float实现左浮动，形成两栏布局。</p>
+      <p>在响应式布局流行之前，这种float布局是网页设计的标准做法。</p>
+    </div>
+  </div>
+</body>
+
+</html>
